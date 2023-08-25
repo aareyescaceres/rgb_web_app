@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colors List</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: rgb(255, 255, 255); /* Background color with rgb */
+    }
+  </style>
+</head>
+<body>
+    <h1>Colors List</h1>
+  
+  <table id="new_color_table">
+    <thead>
+      <tr>
+        <th>R</th>
+        <th>G</th>
+        <th>B</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <td> <input type="text" id="R" name="R"> </td>
+        <td> <input type="text" id="G" name="G"> </td>
+        <td> <input type="text" id="B" name="B"> </td>
+        <td> <button type="button" onclick="addColor()">add</button> </td>
+    </tbody>
+
+  <table id="color-table">
+    <thead>
+      <tr>
+        <th>R</th>
+        <th>G</th>
+        <th>B</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="/colors_list.js"></script>
+</body>
+</html>
